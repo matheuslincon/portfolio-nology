@@ -1,18 +1,43 @@
+$primary-color: #23CE6B;
+
 * {
     background-color: #1C1C1C;
     color: white;
     margin: 0;
     padding: 0;
     font-family: 'Roboto Mono', monospace;
+    &::selection {
+        color: $primary-color;
+        background-color: gray;
+    }
 }
 
-.intro {
+.navbar {
+    display: flex;
+    margin-top: 0.625em;
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    margin-right: 2em;
+    a {
+        margin: 0.625em;
+        font-size: 0.75em;
+        text-decoration: none;
+        &:hover {
+            color: $primary-color;
+        }
+    }
+}
+
+.intro-section {
     height: 100vh;
-} .intro-text {
-    position: absolute;
-    top: 35%;
-    left: 15%;
-} p {
-    font-size: 0.5em;
-    margin: 1.25em;
-} 
+    display: flex;
+    align-items: center;
+    margin-left: 4em;
+    &--text {
+        p {
+            font-size: 0.5em;
+            margin-top: 1.25em;
+        } 
+    }   
+}

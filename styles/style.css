@@ -5,20 +5,37 @@
   padding: 0;
   font-family: "Roboto Mono", monospace;
 }
+*::selection {
+  color: #23CE6B;
+  background-color: gray;
+}
 
-.intro {
+.navbar {
+  display: flex;
+  margin-top: 0.625em;
+  position: fixed;
+  top: 0%;
+  right: 0%;
+  margin-right: 2em;
+}
+.navbar a {
+  margin: 0.625em;
+  font-size: 0.75em;
+  text-decoration: none;
+}
+.navbar a:hover {
+  color: #23CE6B;
+}
+
+.intro-section {
   height: 100vh;
+  display: flex;
+  align-items: center;
+  margin-left: 4em;
 }
-
-.intro-text {
-  position: absolute;
-  top: 35%;
-  left: 15%;
-}
-
-p {
+.intro-section--text p {
   font-size: 0.5em;
-  margin: 1.25em;
+  margin-top: 1.25em;
 }
 
 /*# sourceMappingURL=style.css.map */
