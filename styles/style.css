@@ -38,4 +38,54 @@
   margin-top: 1.25em;
 }
 
+.about-section {
+  display: flex;
+  height: 100vh;
+}
+.about-section--text {
+  width: 50%;
+  padding: 2em;
+}
+.about-section--text h2 {
+  color: #23CE6B;
+  border-bottom: 5px solid #23CE6B;
+  padding-bottom: 2px;
+  width: max-content;
+}
+.about-section--text p {
+  font-size: 0.5em;
+  margin: 10px 0;
+}
+.about-section--text h6 {
+  text-align: center;
+  margin: 10px 0;
+}
+.about-section--text table {
+  width: 100%;
+  font-size: 0.5em;
+  border: 1px solid #23CE6B;
+  padding-left: 20px;
+}
+.about-section--profile {
+  margin-top: 2em;
+}
+.about-section--profile img {
+  object-fit: cover;
+  height: 75vh;
+  border: 5px solid white;
+  border-radius: 10px;
+}
+.about-section--profile--icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-section--profile--icons a {
+  padding: 5px 30px;
+  font-size: 1.5em;
+}
+.about-section--profile--icons a i:hover {
+  color: #23CE6B;
+}
+
 /*# sourceMappingURL=style.css.map */
