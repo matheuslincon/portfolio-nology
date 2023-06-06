@@ -93,3 +93,39 @@ $primary-color: #23CE6B;
         }
     }
 }
+
+.experience-section {
+    height: 100vh;
+    padding: 2em;
+    h2 {
+        text-align: center;
+        margin-top: 10px;
+    }
+    &--content {
+        display: flex;
+        align-items: center;
+        margin: 10px;
+        img {
+            margin-right: 20px;
+            width: 70px;
+        }
+        h3 {
+            font-size: 1em;
+            color: $primary-color;
+            border-bottom: 5px solid $primary-color;
+            padding-bottom: 2px;
+            width: max-content;
+        }
+        h5 {
+            font-size: 0.75em;
+            margin-top: 5px;
+        }
+        h6 {
+            font-size: 0.6em;
+        }
+        p {
+            margin-top: 5px;
+            font-size: 0.5em;
+        }
+    }
+}
