@@ -1,0 +1,24 @@
+* {
+  background-color: #1C1C1C;
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Mono", monospace;
+}
+
+.intro {
+  height: 100vh;
+}
+
+.intro-text {
+  position: absolute;
+  top: 35%;
+  left: 15%;
+}
+
+p {
+  font-size: 0.5em;
+  margin: 1.25em;
+}
+
+/*# sourceMappingURL=style.css.map */
