@@ -48,7 +48,7 @@
 }
 .about-section--text h2 {
   color: #23CE6B;
-  border-bottom: 5px solid #23CE6B;
+  border-bottom: 2px solid #23CE6B;
   padding-bottom: 2px;
   width: max-content;
 }
@@ -93,8 +93,11 @@
   padding: 2em;
 }
 .experience-section h2 {
-  text-align: center;
-  margin-top: 10px;
+  margin: 20px 0;
+  color: #23CE6B;
+  border-bottom: 2px solid #23CE6B;
+  padding-bottom: 2px;
+  width: max-content;
 }
 .experience-section--content {
   display: flex;
@@ -106,9 +109,8 @@
   width: 70px;
 }
 .experience-section--content h3 {
-  font-size: 1em;
-  color: #23CE6B;
-  border-bottom: 5px solid #23CE6B;
+  font-size: 0.875em;
+  border-bottom: 2px solid white;
   padding-bottom: 2px;
   width: max-content;
 }

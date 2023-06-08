@@ -50,7 +50,7 @@ $primary-color: #23CE6B;
         padding: 2em;
         h2 {
             color: $primary-color;
-            border-bottom: 5px solid $primary-color;
+            border-bottom: 2px solid $primary-color;
             padding-bottom: 2px;
             width: max-content;
         }
@@ -98,8 +98,11 @@ $primary-color: #23CE6B;
     height: 100vh;
     padding: 2em;
     h2 {
-        text-align: center;
-        margin-top: 10px;
+        margin: 20px 0;
+        color: $primary-color;
+        border-bottom: 2px solid $primary-color;
+        padding-bottom: 2px;
+        width: max-content;
     }
     &--content {
         display: flex;
@@ -110,9 +113,8 @@ $primary-color: #23CE6B;
             width: 70px;
         }
         h3 {
-            font-size: 1em;
-            color: $primary-color;
-            border-bottom: 5px solid $primary-color;
+            font-size: 0.875em;
+            border-bottom: 2px solid white;
             padding-bottom: 2px;
             width: max-content;
         }
