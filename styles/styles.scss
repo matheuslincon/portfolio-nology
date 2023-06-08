@@ -44,7 +44,7 @@ $primary-color: #23CE6B;
 
 .about-section {
     display: flex;
-    height: 100vh;
+    
     &--text {
         width: 50%;
         padding: 2rem;
@@ -95,7 +95,6 @@ $primary-color: #23CE6B;
 }
 
 .experience-section {
-    height: 100vh;
     padding: 2rem;
     h2 {
         margin: 1.25rem 0;
@@ -133,7 +132,6 @@ $primary-color: #23CE6B;
 }
 
 .project-section {
-    height: 100vh;
     padding: 2rem;
     h2 {
         margin: 1.25rem 0;
@@ -180,4 +178,59 @@ $primary-color: #23CE6B;
             }
         }
     }
+}
+
+.contact-section {
+    padding: 2rem;
+    h2 {
+        margin: 1.25rem 0;
+        color: $primary-color;
+        border-bottom: 2px solid $primary-color;
+        padding-bottom: 2px;
+        width: max-content;
+    }
+    &--container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 2rem auto;
+        &--form {
+            border: 2px solid $primary-color;
+            border-radius: 5px;
+            padding: 1rem;
+            label {
+                display: block;
+                width: 100%;
+                margin: 0.1875rem 0;
+            }
+            textarea, input {
+                display: block;
+                width: 100%;
+                margin: 0.1875rem 0;
+                border: 1px solid white;
+                border-radius: 3px;
+            }
+            &__button {
+                display: flex;
+                justify-content: center;
+                button {
+                    width: 40%;
+                    border: 1px solid white;
+                    border-radius: 3px;
+                    padding: 0.3125rem 0;
+                    margin-top: 0.625rem;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: $primary-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    font-size: 0.5rem;
+    text-align: center;
+    padding: 0.3125rem 0;
 }
