@@ -40,7 +40,6 @@
 
 .about-section {
   display: flex;
-  height: 100vh;
 }
 .about-section--text {
   width: 50%;
@@ -89,7 +88,6 @@
 }
 
 .experience-section {
-  height: 100vh;
   padding: 2rem;
 }
 .experience-section h2 {
@@ -127,7 +125,6 @@
 }
 
 .project-section {
-  height: 100vh;
   padding: 2rem;
 }
 .project-section h2 {
@@ -170,6 +167,61 @@
 }
 .project-section--container--card__content__link a:hover {
   color: #23CE6B;
+}
+
+.contact-section {
+  padding: 2rem;
+}
+.contact-section h2 {
+  margin: 1.25rem 0;
+  color: #23CE6B;
+  border-bottom: 2px solid #23CE6B;
+  padding-bottom: 2px;
+  width: max-content;
+}
+.contact-section--container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem auto;
+}
+.contact-section--container--form {
+  border: 2px solid #23CE6B;
+  border-radius: 5px;
+  padding: 1rem;
+}
+.contact-section--container--form label {
+  display: block;
+  width: 100%;
+  margin: 0.1875rem 0;
+}
+.contact-section--container--form textarea, .contact-section--container--form input {
+  display: block;
+  width: 100%;
+  margin: 0.1875rem 0;
+  border: 1px solid white;
+  border-radius: 3px;
+}
+.contact-section--container--form__button {
+  display: flex;
+  justify-content: center;
+}
+.contact-section--container--form__button button {
+  width: 40%;
+  border: 1px solid white;
+  border-radius: 3px;
+  padding: 0.3125rem 0;
+  margin-top: 0.625rem;
+  cursor: pointer;
+}
+.contact-section--container--form__button button:hover {
+  background-color: #23CE6B;
+}
+
+.footer {
+  font-size: 0.5rem;
+  text-align: center;
+  padding: 0.3125rem 0;
 }
 
 /*# sourceMappingURL=style.css.map */
