@@ -35,7 +35,7 @@
   margin-left: 10rem;
   font-size: 2rem;
 }
-.intro-section--text p {
+.intro-section__text p {
   font-size: 1.5rem;
   margin-top: 1.25rem;
 }
@@ -43,11 +43,11 @@
 .about-section {
   display: flex;
 }
-.about-section--text {
+.about-section__text {
   width: 50%;
   padding: 2rem;
 }
-.about-section--text h2 {
+.about-section__text h2 {
   margin: 1.25rem 0;
   font-size: 2rem;
   color: #23CE6B;
@@ -55,43 +55,43 @@
   padding-bottom: 2px;
   width: max-content;
 }
-.about-section--text p {
+.about-section__text p {
   margin: 0.625rem 0;
 }
-.about-section--text h3 {
+.about-section__text h3 {
   text-align: center;
   margin-top: 5rem;
   margin-bottom: 1rem;
 }
-.about-section--text table {
+.about-section__text table {
   width: 100%;
   border: 1px solid #23CE6B;
   padding-left: 1.25rem;
 }
-.about-section--profile {
+.about-section__profile {
   width: 50%;
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.about-section--profile img {
+.about-section__profile img {
   object-fit: cover;
   width: 75%;
   height: 43.75rem;
   border: 5px solid white;
   border-radius: 0.625rem;
 }
-.about-section--profile--icons {
+.about-section__profile__icons {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.about-section--profile--icons a {
+.about-section__profile__icons a {
   padding: 0.3125rem 1.875rem;
   font-size: 2.5rem;
 }
-.about-section--profile--icons a i:hover {
+.about-section__profile__icons a i:hover {
   color: #23CE6B;
 }
 
@@ -106,25 +106,25 @@
   padding-bottom: 2px;
   width: max-content;
 }
-.experience-section--content {
+.experience-section__content {
   display: flex;
   align-items: center;
   margin: 0.625rem;
   font-size: 1.5rem;
 }
-.experience-section--content img {
+.experience-section__content img {
   margin-right: 1.25rem;
   width: 6.35rem;
 }
-.experience-section--content h3 {
+.experience-section__content h3 {
   border-bottom: 2px solid white;
   padding-bottom: 2px;
   width: max-content;
 }
-.experience-section--content h5 {
+.experience-section__content h5 {
   margin-top: 0.3125rem;
 }
-.experience-section--content p {
+.experience-section__content p {
   font-size: 1rem;
   margin-top: 0.3125rem;
 }
@@ -140,50 +140,50 @@
   padding-bottom: 2px;
   width: max-content;
 }
-.project-section--container {
+.project-section__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   font-size: 1.5rem;
 }
-.project-section--container--card {
+.project-section__container .project-card {
   padding: 0.625rem;
 }
-.project-section--container--card__img img {
+.project-section__container .project-card__img img {
   width: 100%;
   border: 1px solid white;
 }
-.project-section--container--card__content h5 {
+.project-section__container .project-card__content h5 {
   text-align: center;
   margin-bottom: 0.3125rem;
 }
-.project-section--container--card__content h6 {
+.project-section__container .project-card__content h6 {
   text-align: center;
 }
-.project-section--container--card__content p {
+.project-section__container .project-card__content p {
   font-size: 1rem;
   margin-top: 0.3125rem;
 }
-.project-section--container--card__content__links {
+.project-section__container .project-card__links {
   text-align: center;
   display: flex;
   justify-content: center;
   margin-top: 0.625rem;
 }
-.project-section--container--card__content__links__link {
+.project-section__container .project-card__links__link {
   margin: 0.625rem;
   padding: 0.625rem;
   border: 1px solid white;
 }
-.project-section--container--card__content__links__link:hover {
+.project-section__container .project-card__links__link:hover {
   border: 1px solid #23CE6B;
 }
-.project-section--container--card__content__links__link:hover a {
+.project-section__container .project-card__links__link:hover a {
   color: #23CE6B;
 }
-.project-section--container--card__content__links__link:hover i {
+.project-section__container .project-card__links__link:hover i {
   color: #23CE6B;
 }
-.project-section--container--card__content__links__link a {
+.project-section__container .project-card__links__link a {
   text-decoration: none;
 }
 
@@ -198,36 +198,36 @@
   padding-bottom: 2px;
   width: max-content;
 }
-.contact-section--container {
+.contact-section__container {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 2rem auto;
 }
-.contact-section--container--form {
+.contact-section__container .contact-form {
   border: 2px solid #23CE6B;
   border-radius: 5px;
   padding: 1rem;
   font-size: 2rem;
   font-weight: 200;
 }
-.contact-section--container--form label {
+.contact-section__container .contact-form label {
   display: block;
   width: 100%;
   margin: 0.1875rem 0;
 }
-.contact-section--container--form textarea, .contact-section--container--form input {
+.contact-section__container .contact-form textarea, .contact-section__container .contact-form input {
   display: block;
   width: 100%;
   margin: 0.1875rem 0;
   border: 1px solid white;
   border-radius: 3px;
 }
-.contact-section--container--form__button {
+.contact-section__container .contact-form__button {
   display: flex;
   justify-content: center;
 }
-.contact-section--container--form__button button {
+.contact-section__container .contact-form__button button {
   font-size: 1.5rem;
   font-weight: 200;
   width: 40%;
@@ -237,7 +237,7 @@
   margin-top: 0.625rem;
   cursor: pointer;
 }
-.contact-section--container--form__button button:hover {
+.contact-section__container .contact-form__button button:hover {
   background-color: #23CE6B;
 }
 
@@ -265,24 +265,24 @@
   .about-section h2 {
     font-size: 1.5rem;
   }
-  .about-section--text {
+  .about-section__text {
     padding: 1rem;
     width: auto;
     text-align: justify;
   }
-  .about-section--text h3 {
+  .about-section__text h3 {
     margin-top: 2rem;
   }
-  .about-section--text table {
+  .about-section__text table {
     padding-left: 0;
   }
-  .about-section--profile {
+  .about-section__profile {
     width: auto;
   }
-  .about-section--profile img {
+  .about-section__profile img {
     height: auto;
   }
-  .about-section--profile--icons a {
+  .about-section__profile__icons a {
     font-size: 2rem;
     padding: 0.625rem 1.875rem;
   }
@@ -292,13 +292,13 @@
   .experience-section h2 {
     font-size: 1.5rem;
   }
-  .experience-section--content {
+  .experience-section__content {
     display: grid;
     grid-template-columns: 1fr;
     font-size: 1rem;
     text-align: justify;
   }
-  .experience-section--content img {
+  .experience-section__content img {
     display: none;
   }
   .project-section {
@@ -308,7 +308,7 @@
   .project-section h2 {
     font-size: 1.5rem;
   }
-  .project-section--container {
+  .project-section__container {
     grid-template-columns: 1fr;
   }
   .contact-section {
@@ -317,10 +317,10 @@
   .contact-section h2 {
     font-size: 1.5rem;
   }
-  .contact-section--container form {
+  .contact-section__container form {
     font-size: 1rem;
   }
-  .contact-section--container form button {
+  .contact-section__container form button {
     font-size: 1rem;
   }
   .footer {
@@ -342,50 +342,50 @@
     display: grid;
     grid-template-columns: 1fr;
   }
-  .about-section--text {
+  .about-section__text {
     padding: 1rem;
     width: auto;
     text-align: justify;
   }
-  .about-section--text h3 {
+  .about-section__text h3 {
     margin-top: 2rem;
   }
-  .about-section--profile {
+  .about-section__profile {
     width: auto;
   }
-  .about-section--profile img {
+  .about-section__profile img {
     height: 35rem;
   }
-  .about-section--profile--icons a {
+  .about-section__profile__icons a {
     padding: 0.625rem 1.875rem;
   }
   .experience-section {
     padding: 1rem;
   }
-  .experience-section--content {
+  .experience-section__content {
     display: grid;
     grid-template-columns: 1fr;
     font-size: 1rem;
     text-align: justify;
   }
-  .experience-section--content img {
+  .experience-section__content img {
     display: none;
   }
   .project-section {
     padding: 1rem;
     font-size: 1rem;
   }
-  .project-section--container {
+  .project-section__container {
     grid-template-columns: 1fr;
   }
   .contact-section {
     width: auto;
     padding: 1rem;
   }
-  .contact-section--container form {
+  .contact-section__container form {
     font-size: 1.5rem;
   }
-  .contact-section--container form button {
+  .contact-section__container form button {
     font-size: 1rem;
   }
 }
@@ -396,17 +396,17 @@
   .intro-section {
     margin-left: 1rem;
   }
-  .about-section--text {
+  .about-section__text {
     padding: 1rem;
     text-align: justify;
   }
-  .about-section--text h3 {
+  .about-section__text h3 {
     margin-top: 2rem;
   }
-  .about-section--text table {
+  .about-section__text table {
     padding-left: 0;
   }
-  .about-section--profile--icons a {
+  .about-section__profile__icons a {
     font-size: 2rem;
     padding: 0.625rem 1.875rem;
   }
@@ -416,13 +416,13 @@
   .experience-section h2 {
     font-size: 1.5rem;
   }
-  .experience-section--content {
+  .experience-section__content {
     display: grid;
     grid-template-columns: 1fr;
     font-size: 1rem;
     text-align: justify;
   }
-  .experience-section--content img {
+  .experience-section__content img {
     display: none;
   }
   .project-section {
@@ -432,7 +432,7 @@
   .project-section h2 {
     font-size: 1.5rem;
   }
-  .project-section--container {
+  .project-section__container {
     grid-template-columns: 1fr;
   }
 }

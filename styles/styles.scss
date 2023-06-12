@@ -36,7 +36,7 @@ $primary-color: #23CE6B;
     align-items: center;
     margin-left: 10rem;
     font-size: 2rem;
-    &--text {
+    &__text {
         p {
             font-size: 1.5rem;
             margin-top: 1.25rem;
@@ -46,7 +46,7 @@ $primary-color: #23CE6B;
 
 .about-section {
     display: flex;
-    &--text {
+    &__text {
         width: 50%;
         padding: 2rem;
         h2 {
@@ -71,7 +71,7 @@ $primary-color: #23CE6B;
             padding-left: 1.25rem;
         }
     }
-    &--profile {
+    &__profile {
         width: 50%;
         margin-top: 2rem;
         display: flex;
@@ -84,7 +84,7 @@ $primary-color: #23CE6B;
             border: 5px solid white;
             border-radius: 0.625rem;
         }
-        &--icons {
+        &__icons {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -111,7 +111,7 @@ $primary-color: #23CE6B;
         padding-bottom: 2px;
         width: max-content;
     }
-    &--content {
+    &__content {
         display: flex;
         align-items: center;
         margin: 0.625rem;
@@ -128,8 +128,7 @@ $primary-color: #23CE6B;
         h5 {
             margin-top: 0.3125rem;
         }
-        h6 {
-        }
+
         p {
             font-size: 1rem;
             margin-top: 0.3125rem;
@@ -147,11 +146,11 @@ $primary-color: #23CE6B;
         padding-bottom: 2px;
         width: max-content;
     }
-    &--container {
+    &__container {
         display: grid;
         grid-template-columns: 1fr 1fr;
         font-size: 1.5rem;
-        &--card {
+        .project-card {
             padding: 0.625rem;
             &__img {
                 img {
@@ -171,27 +170,27 @@ $primary-color: #23CE6B;
                     font-size: 1rem;
                     margin-top: 0.3125rem;
                 }
-                &__links {
-                    text-align: center;
-                    display: flex;
-                    justify-content: center;
-                    margin-top: 0.625rem;
-                    &__link {
-                        margin: 0.625rem;
-                        padding: 0.625rem;
-                        border: 1px solid white;
-                        &:hover {
-                            border: 1px solid $primary-color;
-                            a {
-                                color: $primary-color;
-                            }
-                            i {
-                                color: $primary-color;
-                            }
-                        }
+            }
+            &__links {
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                margin-top: 0.625rem;
+                &__link {
+                    margin: 0.625rem;
+                    padding: 0.625rem;
+                    border: 1px solid white;
+                    &:hover {
+                        border: 1px solid $primary-color;
                         a {
-                            text-decoration: none;
+                            color: $primary-color;
                         }
+                        i {
+                            color: $primary-color;
+                        }
+                    }
+                    a {
+                        text-decoration: none;
                     }
                 }
             }
@@ -209,12 +208,12 @@ $primary-color: #23CE6B;
         padding-bottom: 2px;
         width: max-content;
     }
-    &--container {
+    &__container {
         display: flex;
         align-items: center;
         justify-content: center;
         margin: 2rem auto;
-        &--form {
+        .contact-form {
             border: 2px solid $primary-color;
             border-radius: 5px;
             padding: 1rem;
@@ -276,7 +275,7 @@ $primary-color: #23CE6B;
         h2 {
             font-size: 1.5rem;
         }
-        &--text {
+        &__text {
             padding: 1rem;
             width: auto;
             text-align: justify;
@@ -287,12 +286,12 @@ $primary-color: #23CE6B;
                 padding-left: 0;
             }
         }
-        &--profile {
+        &__profile {
             width: auto;
             img {
                 height: auto;
             }
-            &--icons {
+            &__icons {
                 a{
                     font-size: 2rem;
                     padding: 0.625rem 1.875rem;
@@ -305,7 +304,7 @@ $primary-color: #23CE6B;
         h2{
             font-size: 1.5rem;
         }
-        &--content {
+        &__content {
             display: grid;
             grid-template-columns: 1fr;
             font-size: 1rem;
@@ -321,7 +320,7 @@ $primary-color: #23CE6B;
         h2 {
             font-size: 1.5rem;
         }
-        &--container {
+        &__container {
             grid-template-columns: 1fr;
         }
     }
@@ -330,7 +329,7 @@ $primary-color: #23CE6B;
         h2 {
             font-size: 1.5rem;
         }
-        &--container {
+        &__container {
             form {
                 font-size: 1rem;
                 button {
@@ -358,7 +357,7 @@ $primary-color: #23CE6B;
     .about-section {
         display: grid;
         grid-template-columns: 1fr;
-        &--text {
+        &__text {
             padding: 1rem;
             width: auto;
             text-align: justify;
@@ -366,12 +365,12 @@ $primary-color: #23CE6B;
                 margin-top: 2rem;
             }
         }
-        &--profile {
+        &__profile {
             width: auto;
             img {
                 height: 35rem;
             }
-            &--icons {
+            &__icons {
                 a{
                     padding: 0.625rem 1.875rem;
                 }
@@ -380,7 +379,7 @@ $primary-color: #23CE6B;
     }
     .experience-section {
         padding: 1rem;
-        &--content {
+        &__content {
             display: grid;
             grid-template-columns: 1fr;
             font-size: 1rem;
@@ -393,14 +392,14 @@ $primary-color: #23CE6B;
     .project-section {
         padding: 1rem;
         font-size: 1rem;
-        &--container {
+        &__container {
             grid-template-columns: 1fr;
         }
     }
     .contact-section {
         width: auto;
         padding: 1rem;
-        &--container {
+        &__container {
             form {
                 font-size: 1.5rem;
                 button {
@@ -419,7 +418,7 @@ $primary-color: #23CE6B;
         margin-left: 1rem;
     }
     .about-section {
-        &--text {
+        &__text {
             padding: 1rem;
             text-align: justify;
             h3 {
@@ -429,8 +428,8 @@ $primary-color: #23CE6B;
                 padding-left: 0;
             }
         }
-        &--profile {
-            &--icons {
+        &__profile {
+            &__icons {
                 a{
                     font-size: 2rem;
                     padding: 0.625rem 1.875rem;
@@ -443,7 +442,7 @@ $primary-color: #23CE6B;
         h2{
             font-size: 1.5rem;
         }
-        &--content {
+        &__content {
             display: grid;
             grid-template-columns: 1fr;
             font-size: 1rem;
@@ -459,7 +458,7 @@ $primary-color: #23CE6B;
         h2 {
             font-size: 1.5rem;
         }
-        &--container {
+        &__container {
             grid-template-columns: 1fr;
         }
     }

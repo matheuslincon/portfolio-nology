@@ -19,7 +19,7 @@
         <a href="#contact">Contact</a>
     </nav>
     <section class="intro-section">
-        <div class="intro-section--text">
+        <div class="intro-section__text">
             <h1>Matheus Lincon,
                 <br>
                 Software Engineer.
@@ -28,7 +28,7 @@
         </div>
     </section>
     <section id="about" class="about-section">
-        <div class="about-section--text">
+        <div class="about-section__text">
             <h2>About</h2>
             <p>Left my home country in the age of 17. Moved to United States to study Business Administration on a soccer scholarship. While in University, I took an interest in Technology and decided to change my field of studies to Computer Science. Got accepted at South China University of Technology with a Guangdong Government Outstanding International Student Scholarship.</p>
             <p>I enjoy solving challenges and creating applications that impact people's lives. I am proactive and ambitious who is always learning new languages and frameworks. I hope to become a Senior Engineer, be able to connect people across the world through accessible and inclusive technology.</p>
@@ -59,9 +59,9 @@
                 </tbody>
             </table>
         </div>
-        <div class="about-section--profile">
+        <div class="about-section__profile">
             <img src="./img/myself.jpeg" alt="myself">
-            <div class="about-section--profile--icons">
+            <div class="about-section__profile__icons">
                 <a href="https://github.com/matheuslincon" target="_blank" rel="noreferrer">
                     <i class="fa-brands fa-github fa-beat" style="--fa-animation-duration: 2s;"></i>
                 </a>
@@ -73,7 +73,7 @@
     </section>
     <section id="experience" class="experience-section">
         <h2>Work Experience</h2>
-        <div class="experience-section--content">
+        <div class="experience-section__content">
             <div>
                 <img src="./img/lewagon.png" alt="Le wagon">
             </div>
@@ -86,7 +86,7 @@
                 </p>
             </div>
         </div>
-        <div class="experience-section--content">
+        <div class="experience-section__content">
             <div>
                 <img src="./img/griggs.png" alt="Le wagon">
             </div>
@@ -100,7 +100,7 @@
             </div>
         </div>
         <h2>Education Experience</h2>
-        <div class="experience-section--content">
+        <div class="experience-section__content">
             <div>
                 <img src="./img/scut.png" alt="Le wagon">
             </div>
@@ -113,7 +113,7 @@
                 </p>
             </div>
         </div>
-        <div class="experience-section--content">
+        <div class="experience-section__content">
             <div>
                 <img src="./img/monroe.png" alt="Le wagon">
             </div>
@@ -129,39 +129,39 @@
     </section>
     <section id="project" class="project-section">
         <h2>Projects</h2>
-        <div class="project-section--container">
-            <div class="project-section--container--card">
-                <div class="project-section--container--card__img">
+        <div class="project-section__container">
+            <div class="project-card">
+                <div class="project-card__img">
                     <img src="./img/musiryx.png" alt="dark market">
                 </div>
-                <div class="project-section--container--card__content">
+                <div class="project-card__content">
                     <h5>Musiryx</h5>
                     <h6>Next.js - Tailwind CSS - Spotify API - NextAuth - Recoil</h6>
                     <p>A Spotify clone with a different design style. It uses NextJs for server-side rendering, Recoil for state management, Tailwind CSS for Style, User authentication with Spotify + NextAuth to persist user's logged in state, Fetch Spotify Playlists and Control Music playback with the Spotify API.</p>
                 </div>
-                <div class="project-section--container--card__content__links">
-                    <div class="project-section--container--card__content__links__link">
+                <div class="project-card__links">
+                    <div class="project-card__links__link">
                         <a href="https://github.com/matheuslincon/musiryx" target="_blank" rel="noreferrer">GitHub <i class="fa-brands fa-github"></i></a>
                     </div>
-                    <div class="project-section--container--card__content__links__link">
+                    <div class="project-card__links__link">
                         <a href="https://musiryx.vercel.app/" target="_blank" rel="noreferrer">Live <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
             </div>
-            <div class="project-section--container--card">
-                <div class="project-section--container--card__img">
+            <div class="project-card">
+                <div class="project-card__img">
                     <img src="./img/darkmarket.png" alt="dark market">
                 </div>
-                <div class="project-section--container--card__content">
+                <div class="project-card__content">
                     <h5>Dark Market</h5>
                     <h6>Javascript - Ruby on Rails - Sass - Bootstrap - PostgreSQL</h6>
                     <p>DarkMarket is a Post Apocalyptic e-commerce where you can buy and sell items to survive. It was developed by 4 students in one week during Le Wagon bootcamp.</p>
                 </div>
-                <div class="project-section--container--card__content__links">
-                    <div class="project-section--container--card__content__links__link">
+                <div class="project-card__links">
+                    <div class="project-card__links__link">
                         <a href="https://github.com/matheuslincon/Dark-Market" target="_blank" rel="noreferrer">GitHub <i class="fa-brands fa-github"></i></a>
                     </div>
-                    <div class="project-section--container--card__content__links__link">
+                    <div class="project-card__links__link">
                         <a href="https://dark-market766.herokuapp.com/" target="_blank" rel="noreferrer">Live <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
@@ -170,8 +170,8 @@
     </section>
     <section id="contact" class="contact-section">
         <h2>Contact me !</h2>
-        <div class="contact-section--container">
-            <form  action="https://formspree.io/f/mayzgvql" method="POST" class="contact-section--container--form">
+        <div class="contact-section__container">
+            <form  action="https://formspree.io/f/mayzgvql" method="POST" class="contact-form">
                 <div>
                     <label for="fullName">Full Name: </label>
                     <input type="text" name="fullName" required>
@@ -184,7 +184,7 @@
                     <label for="message">Leave your message: </label>
                     <textarea name="message" cols="30" rows="10"></textarea>
                 </div>
-                <div class="contact-section--container--form__button">
+                <div class="contact-form__button">
                     <button type="submit">Submit</button>
                 </div>
             </form>
