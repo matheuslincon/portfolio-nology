@@ -12,6 +12,8 @@
 
 .navbar {
   display: flex;
+  font-size: 2rem;
+  font-weight: 200;
   margin-top: 0.625rem;
   position: fixed;
   top: 0%;
@@ -20,7 +22,6 @@
 }
 .navbar a {
   margin: 0.625rem;
-  font-size: 0.75rem;
   text-decoration: none;
 }
 .navbar a:hover {
@@ -29,48 +30,57 @@
 
 .intro-section {
   height: 100vh;
+  width: 100%;
   display: flex;
   align-items: center;
-  margin-left: 4rem;
+  margin-left: 10rem;
+  font-size: 2rem;
 }
 .intro-section--text p {
-  font-size: 0.5rem;
+  font-size: 1.5rem;
   margin-top: 1.25rem;
 }
 
 .about-section {
   display: flex;
+  width: 100%;
 }
 .about-section--text {
   width: 50%;
   padding: 2rem;
 }
 .about-section--text h2 {
+  margin: 1.25rem 0;
+  font-size: 2rem;
   color: #23CE6B;
   border-bottom: 2px solid #23CE6B;
   padding-bottom: 2px;
   width: max-content;
 }
 .about-section--text p {
-  font-size: 0.5rem;
   margin: 0.625rem 0;
 }
-.about-section--text h6 {
+.about-section--text h3 {
   text-align: center;
-  margin: 0.625rem 0;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
 }
 .about-section--text table {
   width: 100%;
-  font-size: 0.5rem;
   border: 1px solid #23CE6B;
   padding-left: 1.25rem;
 }
 .about-section--profile {
+  width: 50%;
   margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .about-section--profile img {
   object-fit: cover;
-  height: 75vh;
+  width: 75%;
+  height: 43.75rem;
   border: 5px solid white;
   border-radius: 0.625rem;
 }
@@ -81,17 +91,19 @@
 }
 .about-section--profile--icons a {
   padding: 0.3125rem 1.875rem;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
 }
 .about-section--profile--icons a i:hover {
   color: #23CE6B;
 }
 
 .experience-section {
+  width: 100%;
   padding: 2rem;
 }
 .experience-section h2 {
   margin: 1.25rem 0;
+  font-size: 2rem;
   color: #23CE6B;
   border-bottom: 2px solid #23CE6B;
   padding-bottom: 2px;
@@ -101,34 +113,32 @@
   display: flex;
   align-items: center;
   margin: 0.625rem;
+  font-size: 1.5rem;
 }
 .experience-section--content img {
   margin-right: 1.25rem;
-  width: 4.375rem;
+  width: 6.35rem;
 }
 .experience-section--content h3 {
-  font-size: 0.875rem;
   border-bottom: 2px solid white;
   padding-bottom: 2px;
   width: max-content;
 }
 .experience-section--content h5 {
-  font-size: 0.75rem;
   margin-top: 0.3125rem;
-}
-.experience-section--content h6 {
-  font-size: 0.6rem;
 }
 .experience-section--content p {
+  font-size: 1rem;
   margin-top: 0.3125rem;
-  font-size: 0.5rem;
 }
 
 .project-section {
+  width: 100%;
   padding: 2rem;
 }
 .project-section h2 {
   margin: 1.25rem 0;
+  font-size: 2rem;
   color: #23CE6B;
   border-bottom: 2px solid #23CE6B;
   padding-bottom: 2px;
@@ -137,6 +147,7 @@
 .project-section--container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  font-size: 1.5rem;
 }
 .project-section--container--card {
   padding: 0.625rem;
@@ -146,34 +157,47 @@
   border: 1px solid white;
 }
 .project-section--container--card__content h5 {
-  font-size: 0.75rem;
   text-align: center;
   margin-bottom: 0.3125rem;
 }
 .project-section--container--card__content h6 {
-  font-size: 0.6rem;
   text-align: center;
 }
 .project-section--container--card__content p {
+  font-size: 1rem;
   margin-top: 0.3125rem;
-  font-size: 0.5rem;
 }
-.project-section--container--card__content__link {
+.project-section--container--card__content__links {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 0.625rem;
 }
-.project-section--container--card__content__link a {
-  font-size: 0.5rem;
-  text-decoration: none;
+.project-section--container--card__content__links__link {
+  margin: 0.625rem;
+  padding: 0.625rem;
+  border: 1px solid white;
 }
-.project-section--container--card__content__link a:hover {
+.project-section--container--card__content__links__link:hover {
+  border: 1px solid #23CE6B;
+}
+.project-section--container--card__content__links__link:hover a {
   color: #23CE6B;
+}
+.project-section--container--card__content__links__link:hover i {
+  color: #23CE6B;
+}
+.project-section--container--card__content__links__link a {
+  text-decoration: none;
 }
 
 .contact-section {
   padding: 2rem;
+  width: 100%;
 }
 .contact-section h2 {
   margin: 1.25rem 0;
+  font-size: 2rem;
   color: #23CE6B;
   border-bottom: 2px solid #23CE6B;
   padding-bottom: 2px;
@@ -189,6 +213,8 @@
   border: 2px solid #23CE6B;
   border-radius: 5px;
   padding: 1rem;
+  font-size: 2rem;
+  font-weight: 200;
 }
 .contact-section--container--form label {
   display: block;
@@ -207,6 +233,8 @@
   justify-content: center;
 }
 .contact-section--container--form__button button {
+  font-size: 1.5rem;
+  font-weight: 200;
   width: 40%;
   border: 1px solid white;
   border-radius: 3px;
@@ -219,9 +247,8 @@
 }
 
 .footer {
-  font-size: 0.5rem;
   text-align: center;
-  padding: 0.3125rem 0;
+  margin: 0.625rem 0;
 }
 
 /*# sourceMappingURL=style.css.map */

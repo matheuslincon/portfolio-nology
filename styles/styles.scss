@@ -14,6 +14,8 @@ $primary-color: #23CE6B;
 
 .navbar {
     display: flex;
+    font-size: 2rem;
+    font-weight: 200;
     margin-top: 0.625rem;
     position: fixed;
     top: 0%;
@@ -21,7 +23,6 @@ $primary-color: #23CE6B;
     margin-right: 2rem;
     a {
         margin: 0.625rem;
-        font-size: 0.75rem;
         text-decoration: none;
         &:hover {
             color: $primary-color;
@@ -31,12 +32,14 @@ $primary-color: #23CE6B;
 
 .intro-section {
     height: 100vh;
+    width: 100%;
     display: flex;
     align-items: center;
-    margin-left: 4rem;
+    margin-left: 10rem;
+    font-size: 2rem;
     &--text {
         p {
-            font-size: 0.5rem;
+            font-size: 1.5rem;
             margin-top: 1.25rem;
         } 
     }   
@@ -44,36 +47,42 @@ $primary-color: #23CE6B;
 
 .about-section {
     display: flex;
-    
+    width: 100%;
     &--text {
         width: 50%;
         padding: 2rem;
         h2 {
+            margin: 1.25rem 0;
+            font-size: 2rem;
             color: $primary-color;
             border-bottom: 2px solid $primary-color;
             padding-bottom: 2px;
             width: max-content;
         }
         p {
-            font-size: 0.5rem;
             margin: 0.625rem 0;
         }
-        h6 {
+        h3 {
             text-align: center;
-            margin: 0.625rem 0;
+            margin-top: 5rem;
+            margin-bottom: 1rem;
         }
         table {
             width: 100%;
-            font-size: 0.5rem;
             border: 1px solid $primary-color;
             padding-left: 1.25rem;
         }
     }
     &--profile {
+        width: 50%;
         margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         img {
             object-fit: cover;
-            height: 75vh;
+            width: 75%;
+            height: 43.75rem;
             border: 5px solid white;
             border-radius: 0.625rem;
         }
@@ -83,7 +92,7 @@ $primary-color: #23CE6B;
             align-items: center;
             a {
                 padding: 0.3125rem 1.875rem;
-                font-size: 1.5rem;
+                font-size: 2.5rem;
                 i {
                     &:hover {
                         color: $primary-color;
@@ -95,9 +104,11 @@ $primary-color: #23CE6B;
 }
 
 .experience-section {
+    width: 100%;
     padding: 2rem;
     h2 {
         margin: 1.25rem 0;
+        font-size: 2rem;
         color: $primary-color;
         border-bottom: 2px solid $primary-color;
         padding-bottom: 2px;
@@ -107,34 +118,34 @@ $primary-color: #23CE6B;
         display: flex;
         align-items: center;
         margin: 0.625rem;
+        font-size: 1.5rem;
         img {
             margin-right: 1.25rem;
-            width: 4.375rem;
+            width: 6.35rem;
         }
         h3 {
-            font-size: 0.875rem;
             border-bottom: 2px solid white;
             padding-bottom: 2px;
             width: max-content;
         }
         h5 {
-            font-size: 0.75rem;
             margin-top: 0.3125rem;
         }
         h6 {
-            font-size: 0.6rem;
         }
         p {
+            font-size: 1rem;
             margin-top: 0.3125rem;
-            font-size: 0.5rem;
         }
     }
 }
 
 .project-section {
+    width: 100%;
     padding: 2rem;
     h2 {
         margin: 1.25rem 0;
+        font-size: 2rem;
         color: $primary-color;
         border-bottom: 2px solid $primary-color;
         padding-bottom: 2px;
@@ -143,6 +154,7 @@ $primary-color: #23CE6B;
     &--container {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        font-size: 1.5rem;
         &--card {
             padding: 0.625rem;
             &__img {
@@ -153,25 +165,36 @@ $primary-color: #23CE6B;
             }
             &__content {
                 h5 {
-                    font-size: 0.75rem;
                     text-align: center;
                     margin-bottom: 0.3125rem;
                 }
                 h6 {
-                    font-size: 0.6rem;
                     text-align: center;
                 }
                 p {
+                    font-size: 1rem;
                     margin-top: 0.3125rem;
-                    font-size: 0.5rem;
                 }
-                &__link {
+                &__links {
                     text-align: center;
-                    a {
-                        font-size: 0.5rem;
-                        text-decoration: none;
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 0.625rem;
+                    &__link {
+                        margin: 0.625rem;
+                        padding: 0.625rem;
+                        border: 1px solid white;
                         &:hover {
-                            color: $primary-color;
+                            border: 1px solid $primary-color;
+                            a {
+                                color: $primary-color;
+                            }
+                            i {
+                                color: $primary-color;
+                            }
+                        }
+                        a {
+                            text-decoration: none;
                         }
                     }
                 }
@@ -182,8 +205,10 @@ $primary-color: #23CE6B;
 
 .contact-section {
     padding: 2rem;
+    width: 100%;
     h2 {
         margin: 1.25rem 0;
+        font-size: 2rem;
         color: $primary-color;
         border-bottom: 2px solid $primary-color;
         padding-bottom: 2px;
@@ -198,6 +223,8 @@ $primary-color: #23CE6B;
             border: 2px solid $primary-color;
             border-radius: 5px;
             padding: 1rem;
+            font-size: 2rem;
+            font-weight: 200;
             label {
                 display: block;
                 width: 100%;
@@ -214,6 +241,8 @@ $primary-color: #23CE6B;
                 display: flex;
                 justify-content: center;
                 button {
+                    font-size: 1.5rem;
+                    font-weight: 200;
                     width: 40%;
                     border: 1px solid white;
                     border-radius: 3px;
@@ -230,7 +259,6 @@ $primary-color: #23CE6B;
 }
 
 .footer {
-    font-size: 0.5rem;
     text-align: center;
-    padding: 0.3125rem 0;
+    margin: 0.625rem 0;
 }
