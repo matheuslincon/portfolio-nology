@@ -305,10 +305,9 @@ $primary-color: #23CE6B;
             font-size: 1.5rem;
         }
         &__content {
-            display: grid;
-            grid-template-columns: 1fr;
+            display: inline;
+            // grid-template-columns: 1fr;
             font-size: 1rem;
-            text-align: justify;
             img {
                 display: none;
             }

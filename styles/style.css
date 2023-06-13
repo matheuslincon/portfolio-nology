@@ -293,10 +293,8 @@
     font-size: 1.5rem;
   }
   .experience-section__content {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: inline;
     font-size: 1rem;
-    text-align: justify;
   }
   .experience-section__content img {
     display: none;
